@@ -1,1 +1,9 @@
-console.log("Hello, World!");
+let newMap = new Map()
+newMap.set(23 , "age")
+newMap.set("andijan" , "region")
+console.log(newMap)
+newMap.delete("andijan")
+console.log(newMap.size)
+console.log(newMap)
+newMap.clear()
+console.log(newMap)
