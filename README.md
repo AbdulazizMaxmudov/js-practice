@@ -1,2 +1,14 @@
-# js-practice
-roadmap to be middle js developer from junior
+| **Turi**                                           | **Izoh**                                                                         | **Misol**                                                                                    |
+| -------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| **Function Declaration**                           | `function` kalit so‘zi bilan yoziladi. Hoisting (oldindan chaqirish) ishlaydi.   | `js function sayHi(){ console.log("Hi"); } sayHi(); `                                        |
+| **Function Expression**                            | Funksiya o‘zgaruvchiga yoziladi. Hoisting ishlamaydi.                            | `js const greet = function(){ console.log("Hello"); } `                                      |
+| **Arrow Function**                                 | Qisqa yozuv. `this` ni o‘zgartirmaydi.                                           | `js const add = (a,b) => a+b; console.log(add(2,3));`                                        |
+| **Default Parameters**                             | Parametr berilmasa, default qiymat oladi.                                        | `js function greet(name="Mehmon"){ console.log("Hi "+name); } greet();`                      |
+| **Rest Parameters**                                | Cheksiz parametrlarni array sifatida oladi.                                      | `js function sum(...nums){ return nums.reduce((a,b)=>a+b); } console.log(sum(1,2,3));`       |
+| **Arguments Object**                               | Funksiya ichida barcha parametrlarni saqlaydi (faqat `function`, arrow’da yo‘q). | `js function test(){ console.log(arguments[0]); } test("ok");`                               |
+| **IIFE (Immediately Invoked Function Expression)** | Yaratilganda darhol ishlaydi.                                                    | `js (function(){ console.log("Run immediately"); })();`                                      |
+| **Scope**                                          | O‘zgaruvchilarning ko‘rinish doirasi: global, local, block.                      | `js let x=10; function test(){ let y=20; }`                                                  |
+| **Lexical Scope**                                  | Ichki funksiya tashqi funksiyadagi o‘zgaruvchiga kirishi mumkin.                 | `js function outer(){ let x=10; function inner(){ console.log(x); } inner(); } outer();`     |
+| **Closure**                                        | Funksiya tashqi kontekstdagi o‘zgaruvchini eslab qoladi.                         | `js function counter(){ let c=0; return ()=>++c; } const add=counter(); console.log(add());` |
+| **Recursion**                                      | Funksiya o‘zini o‘zi chaqiradi.                                                  | `js function fact(n){ return n<=1?1:n*fact(n-1); } console.log(fact(5));`                    |
+| **Strict Mode**                                    | `"use strict"` → yanada qat’iy qoidalar.                                         | `js "use strict"; x=10; // Error`                                                            |
